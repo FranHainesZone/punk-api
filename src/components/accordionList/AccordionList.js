@@ -12,9 +12,10 @@ export const AccordionList = () => {
   // Function is passed to child component
   const toggleAccordionItem = (id) => {
     if (id === activeBeer) {
-      // Reset activeBeer state to 'null' if val is same as ID
+      // if you're clicking on the same beer again, close all accordions by setting activeBeer to null
       setActiveBeer(null);
     } else {
+      // Open new beer accordion tab
       setActiveBeer(id);
     }
   };

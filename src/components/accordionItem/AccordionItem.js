@@ -24,6 +24,7 @@ export const AccordionItem = (props) => {
   return (
     <div className="accordion-item">
       <button
+        // Add active class when selected for toggle styling
         className={`accordion-item__header ${active}`}
         // onClick, call toggleAccordionItem and pass in item ID
         onClick={() => toggleAccordionItem(id)}
