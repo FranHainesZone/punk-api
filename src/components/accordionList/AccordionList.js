@@ -27,15 +27,17 @@ const AccordionList = () => {
       .catch((error) => console.log(error));
   };
 
-  // fetch data when component loads or updates
+  // fetch data when component loads
   useEffect(() => {
     fetchBeers();
   }, []);
 
   return (
     <section>
-      <h3>Learn more about our Punk IPAs</h3>
-      <div className="accordion__container">
+      <div className="accordion-list__container">
+        <h3 class="accordion-list__headline--large">
+          Learn more about our Punk IPAs
+        </h3>
         {/* Map over returned data and pass to child component */}
         {beers.map((beer, id) => (
           <AccordionItem

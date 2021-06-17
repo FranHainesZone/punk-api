@@ -22,42 +22,45 @@ const AccordionItem = (props) => {
   const heightVal = activeBeer === id ? "400px" : "0px";
 
   return (
-    <div className="accordion">
+    <div className="accordion-item">
       <button
-        className={`accordion__header ${active}`}
+        className={`accordion-item__header ${active}`}
         // onClick, call toggleAccordionItem and pass in item ID
         onClick={() => toggleAccordionItem(id)}
       >
-        <div className="accordion__header-text accordion__text--medium accordion__text--bold">
+        <div className="accordion-item__header-text accordion-item__text--medium accordion-item__text--bold">
           {name}
           {/* add "active" class to icon for onClick animation */}
-          <div className={`accordion__icon ${active}`}>
+          <div className={`accordion-item__icon ${active}`}>
             <FontAwesomeIcon icon={faChevronRight} />
           </div>
         </div>
       </button>
-      <div style={{ maxHeight: `${heightVal}` }} className="accordion__content">
-        <div className="accordion__image-container">
-          <img src={image} alt={name} className="accordion__image-item" />
+      <div
+        style={{ maxHeight: `${heightVal}` }}
+        className="accordion-item__content"
+      >
+        <div className="accordion-item__image-container">
+          <img src={image} alt={name} className="accordion-item__image-item" />
         </div>
-        <div className="accordion__text-container">
-          <div className="accordion__text--large accordion__text--bold">
+        <div className="accordion-item__text-container">
+          <div className="accordion-item__text--large accordion-item__text--bold">
             {tagline}
           </div>
-          <div className="accordion__text--small">{description}</div>
-          <div className="accordion__text--small">
-            <span className="accordion__text--bold">
+          <div className="accordion-item__text--small">{description}</div>
+          <div className="accordion-item__text--small">
+            <span className="accordion-item__text--bold">
               Tastes even better when paired with:
             </span>
-            <ul className="accordion__list-container">
+            <ul className="accordion-item__list-container">
               {/* Map over foodPairing array and pass to list element */}
               {foodPairing.map((foodItem) => (
-                <li className="accordion__list-item">{foodItem}</li>
+                <li className="accordion-item__list-item">{foodItem}</li>
               ))}
             </ul>
           </div>
-          <div className="accordion__text--small">
-            <span className="accordion__text--bold">First Brewed: </span>
+          <div className="accordion-item__text--small">
+            <span className="accordion-item__text--bold">First Brewed: </span>
             {firstBrewed}
           </div>
         </div>
