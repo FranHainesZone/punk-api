@@ -1,1 +1,1 @@
-export { BeerItem } from "./beerItem";
+export { AccordionItem } from "./accordionItem";

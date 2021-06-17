@@ -2,9 +2,9 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 
-import "./AccordionItem.scss";
+import "./accordionItem.scss";
 
-const AccordionItem = (props) => {
+export const AccordionItem = (props) => {
   const {
     name,
     id,
@@ -68,5 +68,3 @@ const AccordionItem = (props) => {
     </div>
   );
 };
-
-export default AccordionItem;

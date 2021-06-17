@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 
-import AccordionItem from "../accordionItem/AccordionItem";
-import "./AccordionList.scss";
+import { AccordionItem } from "../accordionItem";
+import "./accordionList.scss";
 
-const AccordionList = () => {
+export const AccordionList = () => {
   // Set initial state - 'beers' state will hold response data
   const [beers, setBeers] = useState([]);
   // 'activeBeer' state will differentiate between selected beer
@@ -51,5 +51,3 @@ const AccordionList = () => {
     </section>
   );
 };
-
-export default AccordionList;
