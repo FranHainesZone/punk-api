@@ -56,7 +56,9 @@ export const AccordionItem = (props) => {
             <ul className="accordion-item__list-container">
               {/* Map over foodPairing array and pass to list element */}
               {foodPairing.map((foodItem) => (
-                <li className="accordion-item__list-item">{foodItem}</li>
+                <li key={foodItem} className="accordion-item__list-item">
+                  {foodItem}
+                </li>
               ))}
             </ul>
           </div>
