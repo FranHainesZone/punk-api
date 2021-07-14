@@ -11284,6 +11284,18 @@
   "resolved" "https://registry.npmjs.org/timsort/-/timsort-0.3.0.tgz"
   "version" "0.3.0"
 
+"tiny-slider-react@^0.5.3":
+  "integrity" "sha512-miTPlaWgwfg2U7WBDxdR40LFhAncIS2fF03tuNE5nqVIF5tuvjVFHGz1V0LSJWoNeOtXgoWs94JB2/hdxrCWqA=="
+  "resolved" "https://registry.npmjs.org/tiny-slider-react/-/tiny-slider-react-0.5.3.tgz"
+  "version" "0.5.3"
+  dependencies:
+    "tiny-slider" "^2.9.2"
+
+"tiny-slider@^2.9.2", "tiny-slider@^2.9.3":
+  "integrity" "sha512-KZY45m+t3fb3Kwlqsic0PIos1lgTNXBEC5N/AhI3aNEcryrd0nXohZMbVPMkcNYdbLjY1IUJAXWYAO6/RGJnKw=="
+  "resolved" "https://registry.npmjs.org/tiny-slider/-/tiny-slider-2.9.3.tgz"
+  "version" "2.9.3"
+
 "tmpl@1.0.x":
   "integrity" "sha1-I2QN17QtAEM5ERQIIOXPRA5SHdE="
   "resolved" "https://registry.npmjs.org/tmpl/-/tmpl-1.0.4.tgz"
@@ -11799,6 +11811,11 @@
   "integrity" "sha512-PFMKIY+bRSXlMxVAQ+m2aw9c/ioUYfDgrYot0YUa+/xa0sakubWhSDyxAKwzymvXVdF4CZI71g06W+mqhzu6ig=="
   "resolved" "https://registry.npmjs.org/web-vitals/-/web-vitals-1.1.2.tgz"
   "version" "1.1.2"
+
+"webfontloader@^1.6.28":
+  "integrity" "sha1-23hhKSU8tujq5UwvsF+HCvZnW64="
+  "resolved" "https://registry.npmjs.org/webfontloader/-/webfontloader-1.6.28.tgz"
+  "version" "1.6.28"
 
 "webidl-conversions@^5.0.0":
   "integrity" "sha512-VlZwKPCkYKxQgeSbH5EyngOmRp7Ww7I9rQLERETtf5ofd9pGeswWiOtogpEO850jziPRarreGxn5QIiTqpb2wA=="

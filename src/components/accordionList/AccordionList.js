@@ -36,9 +36,7 @@ export const AccordionList = () => {
   return (
     <section>
       <div className="accordion-list__container">
-        <h3 className="accordion-list__headline--large">
-          Learn more about our Punk IPAs
-        </h3>
+        <h3 className="accordion-list__headline--large">Brewdog Beers</h3>
         {/* Map over returned data and pass to child component */}
         {beers.map((beer, id) => (
           <AccordionItem
